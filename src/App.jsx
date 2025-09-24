@@ -1,5 +1,5 @@
 import React from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Fruits from "./components/Fruits/Fruits";
 import Dairy from "./components/Dairy/Dairy";
@@ -8,7 +8,7 @@ import Layout from "./components/Layout/Layout";
 import SeaFoods from "./components/SeaFoods/SeaFoods";
 
 const App = () => {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Layout/>,
